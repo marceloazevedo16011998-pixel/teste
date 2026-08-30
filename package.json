@@ -1,0 +1,1 @@
+{"name":"mg-ai-developer","version":"1.0.0","private":true,"scripts":{"build":"npm run build:chrome","build:chrome":"node scripts/build-chrome.mjs","check:chrome":"node scripts/check-chrome.mjs","package:chrome":"node scripts/package-chrome.mjs"},"engines":{"node":">=20"}}
