@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "MG AI Developer",
+  "short_name": "MG AI Developer",
+  "description": "Assistente de desenvolvimento com GitHub e IA.",
+  "version": "1.0.0",
+  "action": { "default_title": "Abrir MG AI Developer" },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "side_panel": { "default_path": "sidepanel/index.html" },
+  "permissions": ["sidePanel", "storage", "identity"],
+  "host_permissions": ["https://api.github.com/*", "https://github.com/*"],
+  "content_security_policy": { "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://api.github.com https://github.com" }
+}
